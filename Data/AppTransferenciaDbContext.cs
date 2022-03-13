@@ -22,8 +22,7 @@ namespace AppTransferencia.AppTransferencia.Data
 
         public virtual DbSet<Bancos> Bancos { get; set; }
         public virtual DbSet<Clientes> Clientes { get; set; }
-        public virtual DbSet<Cuentas> Cuentas { get; set; }
-        public virtual DbSet<GravamenFinanciero> GravamenFinanciero { get; set; }
+        public virtual DbSet<Cuentas> Cuentas { get; set; }       
         public virtual DbSet<TipoTransaccion> TipoTransaccion { get; set; }
         public virtual DbSet<Transaccion> Transaccion { get; set; }
 
@@ -75,26 +74,18 @@ namespace AppTransferencia.AppTransferencia.Data
 
                 entity.Property(e => e.Saldo).HasColumnType("money");
 
-                entity.HasOne(d => d.IdBancoNavigation)
+                entity.HasOne(d => d.Banco)
                     .WithMany(p => p.Cuentas)
                     .HasForeignKey(d => d.IdBanco)
                     .OnDelete(DeleteBehavior.ClientSetNull)
                     .HasConstraintName("FK_Cuentas_Bancos");
 
-                entity.HasOne(d => d.IdClienteNavigation)
+                entity.HasOne(d => d.Cliente)
                     .WithMany(p => p.Cuentas)
                     .HasForeignKey(d => d.IdCliente)
                     .OnDelete(DeleteBehavior.ClientSetNull)
                     .HasConstraintName("FK_Cuentas_Clientes");
-            });
-
-            modelBuilder.Entity<GravamenFinanciero>(entity =>
-            {
-                entity.Property(e => e.NombreGravamen)
-                    .HasColumnName("Nombre_Gravamen")
-                    .HasMaxLength(20)
-                    .IsUnicode(false);
-            });
+            });         
 
             modelBuilder.Entity<TipoTransaccion>(entity =>
             {
@@ -122,12 +113,12 @@ namespace AppTransferencia.AppTransferencia.Data
                     .HasColumnName("Valor_Retiro")
                     .HasColumnType("money");
 
-                entity.HasOne(d => d.IdClienteNavigation)
+                entity.HasOne(d => d.Cliente)
                     .WithMany(p => p.Transaccion)
                     .HasForeignKey(d => d.IdCliente)
                     .HasConstraintName("FK_Transaccion_Clientes");
 
-                entity.HasOne(d => d.IdTipoTransaccionNavigation)
+                entity.HasOne(d => d.TipoTransaccion)
                     .WithMany(p => p.Transaccion)
                     .HasForeignKey(d => d.IdTipoTransaccion)
                     .HasConstraintName("FK_Transaccion_TipoTransaccion");
