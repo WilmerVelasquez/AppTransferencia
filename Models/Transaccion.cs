@@ -12,17 +12,30 @@ namespace AppTransferencia.Models
 	public partial class Transaccion
 	{
 		public int Id { get; set; }
+		[Display(Name ="Tipo Transacción")]
 		public int IdTipoTransaccion { get; set; }
 		[DataType(DataType.Currency)]
 		[Column(TypeName = "money")]
-		public decimal ValorGmf { get; set; }
-		public int IdCliente { get; set; }
-		public decimal ValorRetiro { get; set; }
+		[Display(Name ="Valor GMF")]
+		public decimal? ValorGmf { get; set; }
+		public int? IdCliente { get; set; }
+		[Display(Name ="Valor Retiro")]
+		public decimal? ValorRetiro { get; set; }
+		[Display(Name = "Cuenta Origen")]
+		public int IdCuentaOrigen { get; set; }
+		[Display(Name = "Cuenta Destino")]
+		public int? IdCuentaDestino { get; set; }
 		[Display(Name = " Fecha Transacción")]
-		public DateTime FechaTransacción { get; set; }
+		public DateTime? FechaTransacción { get; set; }
 
+
+		[Display(Name ="Nombres")]
 		public virtual Clientes IdClienteNavigation { get; set; }
+		[Display(Name ="Cuenta Destino")]
+		public virtual Cuentas IdCuentaDestinoNavigation { get; set; }
+		[Display(Name ="Cuenta Origen")]
+		public virtual Cuentas IdCuentaOrigenNavigation { get; set; }
+		[Display(Name ="Tipo Transacción")]
 		public virtual TipoTransaccion IdTipoTransaccionNavigation { get; set; }
-
 	}
 }

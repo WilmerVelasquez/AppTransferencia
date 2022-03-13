@@ -11,16 +11,29 @@ namespace AppTransferencia.Models
 {
 	public partial class Cuentas
 	{
+		public Cuentas()
+		{
+			TransaccionIdCuentaDestinoNavigation = new HashSet<Transaccion>();
+			TransaccionIdCuentaOrigenNavigation = new HashSet<Transaccion>();
+		}
+
 		public int Id { get; set; }
 		public int IdBanco { get; set; }
 		[DataType(DataType.Currency)]
 		[Column(TypeName = "money")]
 		public decimal Saldo { get; set; }
 		public int IdCliente { get; set; }
-		[Display(Name ="Número Cuenta")]
+		[Display(Name = "Número Cuenta")]
 		public string NumCuenta { get; set; }
+		public string CuentaSaldo
+		{
+			get { return NumCuenta + " " + Saldo; }
+		}
 
-		public virtual Bancos Banco { get; set; }
-		public virtual Clientes Cliente { get; set; }
+
+		public virtual Bancos IdBancoNavigation { get; set; }
+		public virtual Clientes IdClienteNavigation { get; set; }
+		public virtual ICollection<Transaccion> TransaccionIdCuentaDestinoNavigation { get; set; }
+		public virtual ICollection<Transaccion> TransaccionIdCuentaOrigenNavigation { get; set; }
 	}
 }

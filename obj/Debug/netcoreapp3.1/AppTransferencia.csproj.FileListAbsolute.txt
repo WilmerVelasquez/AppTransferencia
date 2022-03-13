@@ -74,7 +74,6 @@ C:\Users\Wilmer\source\repos\AppTransferencia\bin\Debug\netcoreapp3.1\runtimes\w
 C:\Users\Wilmer\source\repos\AppTransferencia\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.0\System.Runtime.Caching.dll
 C:\Users\Wilmer\source\repos\AppTransferencia\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.0\System.Runtime.Caching.dll
 C:\Users\Wilmer\source\repos\AppTransferencia\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
-C:\Users\Wilmer\source\repos\AppTransferencia\obj\Debug\netcoreapp3.1\AppTransferencia.csprojAssemblyReference.cache
 C:\Users\Wilmer\source\repos\AppTransferencia\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Razor.Language.dll
 C:\Users\Wilmer\source\repos\AppTransferencia\bin\Debug\netcoreapp3.1\Microsoft.CodeAnalysis.dll
 C:\Users\Wilmer\source\repos\AppTransferencia\bin\Debug\netcoreapp3.1\Microsoft.CodeAnalysis.CSharp.dll
@@ -420,7 +419,7 @@ C:\Users\Wilmer\source\repos\AppTransferencia\bin\Debug\netcoreapp3.1\Microsoft.
 C:\Users\Wilmer\source\repos\AppTransferencia\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyModel.dll
 C:\Users\Wilmer\source\repos\AppTransferencia\bin\Debug\netcoreapp3.1\System.Text.Json.dll
 C:\Users\Wilmer\source\repos\AppTransferencia\obj\Debug\netcoreapp3.1\AppTransferencia.MvcApplicationPartsAssemblyInfo.cs
-C:\Users\Wilmer\source\repos\AppTransferencia\obj\Debug\netcoreapp3.1\Razor\Views\Transaccions\Create.cshtml.g.cs
-C:\Users\Wilmer\source\repos\AppTransferencia\obj\Debug\netcoreapp3.1\Razor\Views\Transaccions\Details.cshtml.g.cs
-C:\Users\Wilmer\source\repos\AppTransferencia\obj\Debug\netcoreapp3.1\Razor\Views\Transaccions\Edit.cshtml.g.cs
-C:\Users\Wilmer\source\repos\AppTransferencia\obj\Debug\netcoreapp3.1\Razor\Views\Transaccions\Index.cshtml.g.cs
+C:\Users\Wilmer\source\repos\AppTransferencia\obj\Debug\netcoreapp3.1\AppTransferencia.csprojAssemblyReference.cache
+C:\Users\Wilmer\source\repos\AppTransferencia\obj\Debug\netcoreapp3.1\Razor\Views\Transaccion\Create.cshtml.g.cs
+C:\Users\Wilmer\source\repos\AppTransferencia\obj\Debug\netcoreapp3.1\Razor\Views\Transaccion\Index.cshtml.g.cs
+C:\Users\Wilmer\source\repos\AppTransferencia\obj\Debug\netcoreapp3.1\Razor\Views\Transaccion\CrearTransaccion.cshtml.g.cs

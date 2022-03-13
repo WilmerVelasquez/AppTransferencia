@@ -8,22 +8,21 @@ using System.ComponentModel.DataAnnotations;
 
 namespace AppTransferencia.Models
 {
-	public class Clientes
+	public partial class Clientes
 	{
 		public Clientes()
 		{
 			Cuentas = new HashSet<Cuentas>();
 			Transaccion = new HashSet<Transaccion>();
 		}
-
 		public int Id { get; set; }
 		public string Nombres { get; set; }
 		public string Apellidos { get; set; }
 		public bool Gmf { get; set; }
 		[Display(Name = " Nombre Completo")]
-		public string FullName
+		public string NombreCompleto
 		{
-			get { return Nombres + ", " + Apellidos; }
+			get { return Nombres + " " + Apellidos; }
 		}
 
 		public virtual ICollection<Cuentas> Cuentas { get; set; }
