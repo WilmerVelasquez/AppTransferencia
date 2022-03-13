@@ -10,25 +10,15 @@
 <hr />
 <div class="row">
 	<div class="col-md-4">
-		<form asp-action="Create">
+		<form asp-action="CrearTransaccion">
 			<div asp-validation-summary="ModelOnly" class="text-danger"></div>
-			<div class="form-group">
-				<label asp-for="IdTipoTransaccion" class="control-label"></label>
-				<select asp-for="IdTipoTransaccion" class="form-control" asp-items="ViewBag.IdTipoTransaccion"></select>
-			</div>
-			<div class="form-group">
-				<label asp-for="ValorGmf" class="control-label"></label>
-				<input asp-for="ValorGmf" class="form-control" />
-				<span asp-validation-for="ValorGmf" class="text-danger"></span>
-			</div>
 			<div class="form-group">
 				<label asp-for="IdCliente" class="control-label"></label>
 				<select asp-for="IdCliente" class="form-control" asp-items="ViewBag.IdCliente"></select>
 			</div>
 			<div class="form-group">
-				<label asp-for="ValorRetiro" class="control-label"></label>
-				<input asp-for="ValorRetiro" class="form-control" />
-				<span asp-validation-for="ValorRetiro" class="text-danger"></span>
+				<label asp-for="IdTipoTransaccion" class="control-label"></label>
+				<select asp-for="IdTipoTransaccion" class="form-control" asp-items="ViewBag.IdTipoTransaccion"></select>
 			</div>
 			<div class="form-group">
 				<label asp-for="IdCuentaOrigen" class="control-label"></label>
@@ -40,12 +30,14 @@
 				<select asp-for="IdCuentaDestino" class="form-control" asp-items="ViewBag.IdCuentaDestino"></select>
 			</div>
 			<div class="form-group">
-				<label asp-for="FechaTransacción" class="control-label"></label>
-				<input asp-for="FechaTransacción" class="form-control" />
-				<span asp-validation-for="FechaTransacción" class="text-danger"></span>
+				<label asp-for="ValorRetiro" class="control-label"></label>
+				<input asp-for="ValorRetiro" class="form-control" />
+				<span asp-validation-for="ValorRetiro" class="text-danger"></span>
 			</div>
+			
+
 			<div class="form-group">
-				<input type="submit" value="Create" class="btn btn-primary" />
+				<input type="submit" value="Crear" class="btn btn-primary" />
 			</div>
 		</form>
 	</div>

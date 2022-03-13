@@ -420,6 +420,5 @@ C:\Users\Wilmer\source\repos\AppTransferencia\bin\Debug\netcoreapp3.1\Microsoft.
 C:\Users\Wilmer\source\repos\AppTransferencia\bin\Debug\netcoreapp3.1\System.Text.Json.dll
 C:\Users\Wilmer\source\repos\AppTransferencia\obj\Debug\netcoreapp3.1\AppTransferencia.MvcApplicationPartsAssemblyInfo.cs
 C:\Users\Wilmer\source\repos\AppTransferencia\obj\Debug\netcoreapp3.1\AppTransferencia.csprojAssemblyReference.cache
-C:\Users\Wilmer\source\repos\AppTransferencia\obj\Debug\netcoreapp3.1\Razor\Views\Transaccion\Create.cshtml.g.cs
 C:\Users\Wilmer\source\repos\AppTransferencia\obj\Debug\netcoreapp3.1\Razor\Views\Transaccion\Index.cshtml.g.cs
 C:\Users\Wilmer\source\repos\AppTransferencia\obj\Debug\netcoreapp3.1\Razor\Views\Transaccion\CrearTransaccion.cshtml.g.cs

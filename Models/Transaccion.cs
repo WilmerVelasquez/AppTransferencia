@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.AspNetCore.Mvc;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
@@ -19,10 +20,12 @@ namespace AppTransferencia.Models
 		[Display(Name ="Valor GMF")]
 		public decimal? ValorGmf { get; set; }
 		public int? IdCliente { get; set; }
-		[Display(Name ="Valor Retiro")]
+		[Display(Name ="¿Cuanto?")]
 		public decimal? ValorRetiro { get; set; }
 		[Display(Name = "Cuenta Origen")]
+		[Remote("IdCuentaOrigenIndexChanged", "Transaccion")]
 		public int IdCuentaOrigen { get; set; }
+		
 		[Display(Name = "Cuenta Destino")]
 		public int? IdCuentaDestino { get; set; }
 		[Display(Name = " Fecha Transacción")]
@@ -32,10 +35,17 @@ namespace AppTransferencia.Models
 		[Display(Name ="Nombres")]
 		public virtual Clientes IdClienteNavigation { get; set; }
 		[Display(Name ="Cuenta Destino")]
+		
+		
 		public virtual Cuentas IdCuentaDestinoNavigation { get; set; }
-		[Display(Name ="Cuenta Origen")]
+		[Display(Name ="Cuenta Origen")]		
 		public virtual Cuentas IdCuentaOrigenNavigation { get; set; }
 		[Display(Name ="Tipo Transacción")]
+
 		public virtual TipoTransaccion IdTipoTransaccionNavigation { get; set; }
+
+		
+		
+
 	}
 }
