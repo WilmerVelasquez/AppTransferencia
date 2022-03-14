@@ -19,11 +19,12 @@ namespace AppTransferencia.Models
 		[Column(TypeName = "money")]
 		[Display(Name ="Valor GMF")]
 		public decimal? ValorGmf { get; set; }
+		[Display(Name ="Cliente")]
 		public int? IdCliente { get; set; }
-		[Display(Name ="¿Cuanto?")]
+		[Display(Name ="Valor")]
 		public decimal? ValorRetiro { get; set; }
-		[Display(Name = "Cuenta Origen")]
-		[Remote("IdCuentaOrigenIndexChanged", "Transaccion")]
+
+		[Display(Name = "Cuenta Origen")]		
 		public int IdCuentaOrigen { get; set; }
 		
 		[Display(Name = "Cuenta Destino")]
@@ -34,14 +35,12 @@ namespace AppTransferencia.Models
 
 		[Display(Name ="Nombres")]
 		public virtual Clientes IdClienteNavigation { get; set; }
-		[Display(Name ="Cuenta Destino")]
-		
+		[Display(Name ="Cuenta Destino")]	
 		
 		public virtual Cuentas IdCuentaDestinoNavigation { get; set; }
 		[Display(Name ="Cuenta Origen")]		
 		public virtual Cuentas IdCuentaOrigenNavigation { get; set; }
 		[Display(Name ="Tipo Transacción")]
-
 		public virtual TipoTransaccion IdTipoTransaccionNavigation { get; set; }
 
 		

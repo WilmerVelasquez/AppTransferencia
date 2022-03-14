@@ -1,67 +1,75 @@
 ﻿@model IEnumerable<AppTransferencia.Models.Transaccion>
 
 @{
-    ViewData["Title"] = "Index";
+	ViewData["Title"] = "Index";
 }
 
-<h1>Index</h1>
+<h1>Registro De Transacciones</h1>
 
-<p>
-    <a asp-action="CrearTransaccion">Create Nueva Transacción</a>
-</p>
+@*<p>
+	<a asp-action="CrearTransaccion">Create Nueva Transacción</a>
+</p>*@
 <table class="table">
-    <thead>
-        <tr>
-            <th>
-                @Html.DisplayNameFor(model => model.ValorGmf)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.ValorRetiro)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.FechaTransacción)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.IdClienteNavigation.Nombres)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.IdCuentaDestinoNavigation)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.IdCuentaOrigenNavigation)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.IdTipoTransaccionNavigation)
-            </th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-@foreach (var item in Model) {
-        <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.ValorGmf)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.ValorRetiro)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.FechaTransacción)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.IdClienteNavigation.Apellidos)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.IdCuentaDestinoNavigation.NumCuenta)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.IdCuentaOrigenNavigation.NumCuenta)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.IdTipoTransaccionNavigation.Id)
-            </td>
-         
-        </tr>
-}
-    </tbody>
+	<thead>
+		<tr>
+			<th>
+				@Html.DisplayNameFor(model => model.IdClienteNavigation.NombreCompleto)
+			</th>
+			<th>
+				@Html.DisplayNameFor(model => model.IdTipoTransaccionNavigation.NombreTipoTran)
+			</th>
+			<th>
+				@Html.DisplayNameFor(model => model.ValorRetiro)
+			</th>
+			<th>
+				@Html.DisplayNameFor(model => model.ValorGmf)
+			</th>
+			<th>
+				@Html.DisplayNameFor(model => model.IdCuentaOrigenNavigation.NumCuenta)
+			</th>
+			<th>
+				@Html.DisplayNameFor(model => model.IdCuentaOrigenNavigation.Saldo)
+			</th>
+
+			<th>
+				@Html.DisplayNameFor(model => model.IdCuentaDestinoNavigation.NumCuenta)
+			</th>
+			<td>
+				@Html.DisplayNameFor(model => model.IdCuentaDestinoNavigation.Saldo)
+			</td>
+		</tr>
+	</thead>
+	<tbody>
+		@foreach (var item in Model)
+		{
+		<tr>
+			<td>
+				@Html.DisplayFor(modelItem => item.IdClienteNavigation.NombreCompleto)
+			</td>
+			<td>
+				@Html.DisplayFor(modelItem => item.IdTipoTransaccionNavigation.NombreTipoTran)
+			</td>
+			<td>
+				@Html.DisplayFor(modelItem => item.ValorRetiro)
+			</td>
+			<td>
+				@Html.DisplayFor(modelItem => item.ValorGmf)
+			</td>
+			<td>
+				@Html.DisplayFor(modelItem => item.IdCuentaOrigenNavigation.NumCuenta)
+			</td>
+			<td>
+				@Html.DisplayFor(modelItem => item.IdCuentaOrigenNavigation.Saldo)
+			</td>
+			<td>
+				@Html.DisplayFor(modelItem => item.IdCuentaDestinoNavigation.NumCuenta)
+			</td>
+			<td>
+				@Html.DisplayFor(modelItem => item.IdCuentaDestinoNavigation.Saldo)
+			</td>
+
+
+		</tr>
+		}
+	</tbody>
 </table>
