@@ -423,9 +423,4 @@ C:\Users\Wilmer\source\repos\AppTransferencia\obj\Debug\netcoreapp3.1\Razor\View
 C:\Users\Wilmer\source\repos\AppTransferencia\obj\Debug\netcoreapp3.1\Razor\Views\Transaccion\CrearTransaccion.cshtml.g.cs
 C:\Users\Wilmer\source\repos\AppTransferencia\obj\Debug\netcoreapp3.1\Razor\Views\Transaccion\Detalle.cshtml.g.cs
 C:\Users\Wilmer\source\repos\AppTransferencia\obj\Debug\netcoreapp3.1\AppTransferencia.csprojAssemblyReference.cache
-C:\Users\Wilmer\source\repos\AppTransferencia\obj\Debug\netcoreapp3.1\Razor\Views\Transaccions\Create.cshtml.g.cs
-C:\Users\Wilmer\source\repos\AppTransferencia\obj\Debug\netcoreapp3.1\Razor\Views\Transaccions\Delete.cshtml.g.cs
-C:\Users\Wilmer\source\repos\AppTransferencia\obj\Debug\netcoreapp3.1\Razor\Views\Transaccions\Details.cshtml.g.cs
-C:\Users\Wilmer\source\repos\AppTransferencia\obj\Debug\netcoreapp3.1\Razor\Views\Transaccions\Edit.cshtml.g.cs
-C:\Users\Wilmer\source\repos\AppTransferencia\obj\Debug\netcoreapp3.1\Razor\Views\Transaccions\Index.cshtml.g.cs
 C:\Users\Wilmer\source\repos\AppTransferencia\obj\Debug\netcoreapp3.1\Razor\Views\Transaccion\Retirar.cshtml.g.cs

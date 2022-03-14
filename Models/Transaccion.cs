@@ -35,8 +35,7 @@ namespace AppTransferencia.Models
 
 		[Display(Name ="Nombres")]
 		public virtual Clientes IdClienteNavigation { get; set; }
-		[Display(Name ="Cuenta Destino")]	
-		
+		[Display(Name ="Cuenta Destino")]			
 		public virtual Cuentas IdCuentaDestinoNavigation { get; set; }
 		[Display(Name ="Cuenta Origen")]		
 		public virtual Cuentas IdCuentaOrigenNavigation { get; set; }
